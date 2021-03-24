@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class=".container">
+        <div class="element">
+            <div class="form">
+                <h2 class="h2login">Login to userpage</h2>
+                <form action="/login" method="post" id="form_login">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="password">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <div class="btn_center">
+                        <button type="submit" class="btn">Login</button>
+                        <% if (messages.error) { %>
+                            <%= messages.error %>
+                        <% } %>
+                    </div>
+
+                </form>
+                <p>Not registered yet? <a href="/register"> Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

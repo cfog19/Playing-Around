@@ -1,0 +1,105 @@
+.h2login {
+    padding: 15px 0 10px;
+}
+
+body {
+    background-color: whitesmoke;
+    height: 100vh;
+    display:flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    position:relative;
+    width:90vw;
+    height: 90vh;
+    margin: auto;
+}
+
+.element{
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 50vw; height: 50vh;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-style: groove;
+    box-shadow: 5px 10px #888888;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 75%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+input[type=email]:focus {
+    border: 3px solid #555;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 5px;
+}
+
+
+.btn_center
+{
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #994e4e;
+}
+
+.btn
+{
+    margin-top: 10px;
+    color: white;
+    background-color: lightcoral;
+    border: 2px solid #994e4e;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
